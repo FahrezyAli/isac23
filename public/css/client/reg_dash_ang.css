@@ -1,0 +1,180 @@
+.container-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.judul {
+    text-align: center;
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(
+        0deg,
+        #fefefe -20.43%,
+        #65eb8f 13.7%,
+        #5ac2af 49.25%,
+        #1789fc 81.25%,
+        #842998 116.09%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #11052d;
+    position: relative;
+}
+
+.judul::after {
+    letter-spacing: 0.15rem;
+    background: -webkit-linear-gradient(
+        0deg,
+        #fefefe -20.43%,
+        #65eb8f 13.7%,
+        #5ac2af 49.25%,
+        #1789fc 81.25%,
+        #842998 116.09%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+    content: attr(data-tim);
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 100%;
+}
+.member {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.highlight{
+    background-color: white !important;
+    color: #089fcd;
+    border: 1px solid #08b7ee;
+}
+
+.member .member--anggota {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* padding: 20px ; */
+    height: 40px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background-color: #08b7ee;
+    cursor: pointer;
+}
+
+
+
+.member .member--anggota:hover {
+    background-color: #fff;
+    border: 1px solid #08b7ee;
+    color: #08b7ee;
+}
+
+.member .member--anggota:after {
+    background-color: #fff;
+    border: 1px solid #08b7ee;
+    color: #08b7ee;
+}
+
+.line {
+    width: 60px;
+    border: none;
+    border-top: 5px dashed #08b7ee;
+    color: #fff;
+    background-color: #072F38;
+    height: 1px;
+    width: 50%;
+}
+
+.add-anggota-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.image {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.view-pasFoto {
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.image .btn-primary {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+}
+
+.team-data {
+    width: calc(65% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.team .team-data div {
+    width: 100%;
+}
+
+.team div input {
+    width: 300px;
+    align-self: stretch;
+    height: 30px;
+    border: none;
+}
+
+.btn-secondary {
+    width: fit-content;
+    align-content: flex-end;
+}
+
+.team .team-data .btn-secondary {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .add-anggota-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .image .btn-primary {
+        align-self: center;
+    }
+
+    .team-data {
+        width: 100%;
+    }
+}

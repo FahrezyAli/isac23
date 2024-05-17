@@ -1,0 +1,490 @@
+.container {
+    /* margin-top: 2rem; */
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+}
+
+.konten {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.konten .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.form-wrap {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    /* height: calc(80%-3rem); */
+    gap: 1rem;
+}
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.field .field-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+.field .field-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.form-group {
+    /* gap: 1rem; */
+    margin-bottom: 0.5rem;
+}
+
+i {
+    color: #1789fc;
+}
+.fa {
+    height: 1rem;
+    width: 1rem;
+    color: #fff;
+    /* background-color: #fff; */
+}
+.input-with-icon {
+    position: relative;
+}
+.input-with-icon .eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#hide1 {
+    display: none;
+}
+
+.button-reg {
+    margin-top: 2rem;
+}
+
+.login-text {
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    display: flex;
+}
+
+.login-a {
+    margin-left: 0.5rem;
+    background-image: linear-gradient(
+        to right,
+        #65eb8f,
+        #5ac2af,
+        #509bce,
+        #1789fc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 765px) {
+    .button-reg {
+        margin-top: 0;
+    }
+    .login-text {
+        margin-top: 2rem;
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .field .field-left {
+        width: 100%;
+        height: 100%;
+    }
+    .field .field-right {
+        width: 100%;
+        height: 100%;
+    }
+    .konten {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.tabs-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    grid-column-gap: 70px;
+    margin-bottom: 45px;
+    gap: 8px;
+}
+
+.radio-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.tab-link {
+    grid-column-gap: 20px;
+    color: #2cb0a5;
+    align-items: center;
+    padding: 0;
+    display: flex;
+}
+
+.tab-circle {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(44, 176, 165, 0.13);
+    border-radius: 8050%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tab-label {
+    border-bottom: 2px solid #2cb0a5;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.tabs-content {
+    overflow: visible;
+}
+
+@media screen and (max-width: 479px) {
+    .tabs-menu {
+        grid-column-gap: 40px;
+    }
+
+    .tab-circle {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+    }
+}
+
+.tabs-menu a {
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-a:hover {
+    text-underline-offset: 0.2rem;
+    text-decoration-color: #1789fc;
+    text-decoration-thickness: 0.2rem;
+    font-weight: bold;
+}
+
+.custom-radio-button__container input[type="radio"] {
+    display: none;
+}
+.custom-radio-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-label
+    p {
+    background-image: linear-gradient(
+        to right,
+        #65eb8f,
+        #5ac2af,
+        #509bce,
+        #1789fc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-olim {
+    stroke: url(#paint0_linear_447_5499);
+}
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-olim {
+    stroke: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g {
+    clip-path: url(#clip0_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint0 {
+    fill: url(#paint0_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint1 {
+    fill: url(#paint1_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint2 {
+    fill: url(#paint2_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint3 {
+    fill: url(#paint3_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint4 {
+    fill: url(#paint4_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint5 {
+    fill: url(#paint5_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]:checked
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint6 {
+    fill: url(#paint6_linear_447_5504);
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g {
+    clip-path: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint0 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint1 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint2 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint3 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint4 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint5 {
+    fill: #faf5e7;
+}
+
+.custom-radio-button__container
+    input[type="radio"]
+    + .custom-radio-button
+    .tab-circle
+    .svg-uiux
+    g
+    .paint6 {
+    fill: #faf5e7;
+}
+
+.radio-olim:hover .custom-radio-button .tab-circle .svg-olim {
+    stroke: url(#paint0_linear_447_5499) !important;
+}
+
+.radio-olim:hover .custom-radio-button .label-olim p {
+    background-image: linear-gradient(
+        to right,
+        #65eb8f,
+        #5ac2af,
+        #509bce,
+        #1789fc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g {
+    clip-path: url(#clip0_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint0 {
+    fill: url(#paint0_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint1 {
+    fill: url(#paint1_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint2 {
+    fill: url(#paint2_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint3 {
+    fill: url(#paint3_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint4 {
+    fill: url(#paint4_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint5 {
+    fill: url(#paint5_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .tab-circle .svg-uiux g .paint6 {
+    fill: url(#paint6_linear_447_5504) !important;
+}
+
+.radio-uiux:hover .custom-radio-button .label-uiux p {
+    background-image: linear-gradient(
+        to right,
+        #65eb8f,
+        #5ac2af,
+        #509bce,
+        #1789fc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}

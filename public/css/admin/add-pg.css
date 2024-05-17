@@ -1,0 +1,65 @@
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #11052d;
+    padding: 1.5rem 0 0.7rem 0;
+    width: 100%;
+    align-self: center;
+}
+
+.form-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #11052d;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.choice {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.choice-input,
+.question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.nilai {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nilai input {
+    resize: none;
+    width: 25%;
+    border: 1px solid #11052d;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.view-gambar {
+    width: 100%;
+    max-width: 400px;
+}
+
+.select-nilai {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}

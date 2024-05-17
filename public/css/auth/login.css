@@ -1,0 +1,124 @@
+.container {
+    width: 100%;
+    min-height: calc(100vh - 6rem);
+    padding: 0;
+    /* margin:66.4px 0 0 0; */
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.container--left {
+    min-height: calc(100vh - 6rem);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* height: 100%; */
+    /* height: 720px; */
+    /* border: 1px solid red; */
+    padding: 0 3rem 0 3rem;
+}
+.konten {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.konten .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.login-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-text {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.login-a {
+    margin-left: 0.5rem;
+    background-image: linear-gradient(
+        to right,
+        #65eb8f,
+        #5ac2af,
+        #509bce,
+        #1789fc
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i {
+    color: #1789fc;
+}
+.fa {
+    height: 1rem;
+    width: 1rem;
+    color: #fff;
+    /* background-color: #fff; */
+}
+.input-with-icon {
+    position: relative;
+}
+.input-with-icon .eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#hide1 {
+    display: none;
+}
+
+.container--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    min-height: calc(100vh - 6rem);
+    /* height: 720px; */
+    /* height: 100%; */
+    /* border: 1px solid blue; */
+    background: linear-gradient(96.99deg, #4572ee 0%, #64ea91 100%);
+}
+
+.isac--logo {
+    width: 289px;
+    height: 131px;
+}
+
+@media screen and (max-width: 770px) {
+    .container--right {
+        display: none;
+        width: 0;
+    }
+    .container--left {
+        width: 100%;
+    }
+}
+
+.login-a:hover {
+    text-underline-offset: 0.2rem;
+    text-decoration-color: #1789fc;
+    text-decoration-thickness: 0.2rem;
+    font-weight: bold;
+}

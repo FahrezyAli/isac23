@@ -1,0 +1,146 @@
+@use "main.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: main.$background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   text-align: center;
+  //   min-height: 100vh;
+  //   flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .konten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10rem;
+
+    .checklist {
+      width: 18.1875rem;
+      //   height: 28.1875rem;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 3rem;
+      justify-content: center;
+      width: 31.0625rem;
+
+      &--h1 {
+        font-family: main.$h1;
+        font-size: 2rem;
+        color: main.$font-color-confirm-h1;
+        // margin-bottom: 1rem;
+        text-align: left;
+      }
+      &--hcolor {
+        font-family: main.$h1;
+        font-size: 2rem;
+        color: main.$background-color;
+        font-weight: bolder;
+        background: linear-gradient(
+          to right,
+          main.$team-color2, 
+          main.$team-color3, 
+          main.$team-color4, 
+          main.$team-color5
+          );
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+
+        // background-image: linear-gradient(
+        //   to right,
+        //   main.$team-color2,
+        //   main.$team-color3,
+        //   main.$team-color4,
+        //   main.$team-color5
+        // );
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // // margin-bottom: 1rem;
+        text-align: left;
+      }
+      &--p {
+        font-family: main.$paragraph;
+        font-size: 1rem;
+        color: main.$font-color-payment-p;
+        text-align: justify;
+      }
+      &--bukti {
+        font-family: main.$paragraph;
+        font-size: 1rem;
+        color: #fff;
+      }
+
+      // .regis-lomba__form {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   justify-content: center;
+      //   gap: 1.5rem;
+      // }
+
+      .form-group {
+        margin-top: 0.56rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .input--text {
+          width: 240%;
+          background-color: rgba(217, 233, 255, 0.38);
+        }
+      }
+
+      .btn-submit {
+        font-family: main.$paragraph;
+        font-size: 1.03125rem;
+        // width: 80px;
+        color: #faf5e7;
+        display: inline-flex;
+        padding: 0.375rem 1.4375rem 0.4375rem 1.4375rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3.125rem;
+        border-color: transparent;
+        background: linear-gradient(155deg, #4b9762 0%, #46538b 100%);
+        cursor: pointer;
+      }
+      .btn-submit:hover {
+        border: 2px solid #4b9762;
+        background: transparent;
+        transition: 0.5s;
+      }
+    }
+  }
+  .image {
+    position: absolute; /* Add position:absolute */
+    bottom: 0; /* Align the image at the bottom */
+    width: 100%;
+  }
+}

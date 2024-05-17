@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: #072F38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container .konten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 2rem 6rem 2rem;
+  /* margin-bottom: 6rem; */
+}
+.container .konten .calendar {
+  width: 14.1875rem;
+}
+.container .konten .text {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.container .konten .text--h1 {
+  font-family: "Poppins";
+  font-size: 2rem;
+  color: #FEFEFE;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.container .konten .text--p {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #fff;
+}
+.container .image-scene {
+  position: absolute; /* Add position:absolute */
+  bottom: 0; /* Align the image at the bottom */
+  width: 100%;
+}/*# sourceMappingURL=confirm.css.map */
+
+@media screen and (max-width: 396px) {
+    .container .konten {
+        width: calc(100% - 4rem); 
+    }
+    .container .konten .text{
+      padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .container .konten {
+        width: calc(100% - 4rem);
+    }
+    .container .konten .calendar {
+  width: 10.1875rem;
+}
+.container .konten .text{
+      padding: 0.5rem;
+    }
+.container .konten .text--h1{
+  font-size: 1.5rem;
+  line-height: normal;
+  
+}
+.container .konten .text--p{
+ font-size:  0.75rem;
+ line-height: normal;
+}
+
+
+
+}
+@media screen and (max-width: 486px) {
+    .container .konten {
+        width: calc(100% - 4rem);
+    }
+}

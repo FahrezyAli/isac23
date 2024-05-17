@@ -1,0 +1,70 @@
+@use "main.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: main.$background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   text-align: center;
+  //   min-height: 100vh;
+  //   flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .konten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 6rem;
+
+    .calendar {
+      width: 14.1875rem;
+      //   height: 28.1875rem;
+    }
+
+    .text {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+
+      &--h1 {
+        font-family: main.$h1;
+        font-size: 2rem;
+        color: main.$font-color-confirm-h1;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      &--p {
+        font-family: main.$paragraph;
+        font-size: 1rem;
+        color: main.$font-color-confirm-p;
+      }
+    }
+  }
+  .image {
+    position: absolute; /* Add position:absolute */
+    bottom: 0; /* Align the image at the bottom */
+    width: 100%;
+  }
+}
